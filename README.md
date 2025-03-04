@@ -3,7 +3,7 @@ tap for HostedGraphite's CLI tool
 
 Add tap
 ```bash
-brew tap hosedgraphite/hgcli
+brew tap hostedgraphite/hgcli
 ```
 
 Install
