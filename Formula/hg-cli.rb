@@ -5,11 +5,11 @@
 class HgCli < Formula
   desc ""
   homepage "https://github.com/hostedgraphite/homebrew-hgcli"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
-    url "https://github.com/hostedgraphite/hg-cli/releases/download/v0.0.2/hg-cli_0.0.2_darwin_all.tar.gz"
-    sha256 "1291761d84c9ac11a969b5e7679a7cf2c5314a01dd31bfcb728db312467942ef"
+    url "https://github.com/hostedgraphite/hg-cli/releases/download/v0.1.0/hg-cli_0.1.0_darwin_all.tar.gz"
+    sha256 "81537f9a488c4efec737106e06f6afcccf5ad3b393357cd3b6ea0b678bdfaf32"
 
     def install
       bin.install "hg-cli"
@@ -19,8 +19,8 @@ class HgCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hostedgraphite/hg-cli/releases/download/v0.0.2/hg-cli_0.0.2_linux_amd64.tar.gz"
-        sha256 "6aa4a8bc7be3f9391fd924a29ab6ae0b75076dff65ceb2d45a493f5b05850dd9"
+        url "https://github.com/hostedgraphite/hg-cli/releases/download/v0.1.0/hg-cli_0.1.0_linux_amd64.tar.gz"
+        sha256 "6b58b2810077f4d2cfdb6d9f3ea4e359968cffe3be55c21685a65a126f988ca8"
 
         def install
           bin.install "hg-cli"
@@ -29,8 +29,8 @@ class HgCli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hostedgraphite/hg-cli/releases/download/v0.0.2/hg-cli_0.0.2_linux_arm64.tar.gz"
-        sha256 "c3c6dd81736f87d187534401852f1fcb8c640cc74cb18f177094d7393b8d030e"
+        url "https://github.com/hostedgraphite/hg-cli/releases/download/v0.1.0/hg-cli_0.1.0_linux_arm64.tar.gz"
+        sha256 "77e508f966de8ad712237e6d8297147575d6c15ec17e2ab0ddb6bbdda2661dab"
 
         def install
           bin.install "hg-cli"
